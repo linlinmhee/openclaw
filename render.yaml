@@ -3,7 +3,7 @@ services:
     name: openclaw
     runtime: docker
     plan: standard
-    dockerCommand: node openclaw.mjs gateway --allow-unconfigured --bind 0.0.0.0 --port ${PORT:-8080}
+    dockerCommand: node openclaw.mjs gateway --allow-unconfigured --bind 0.0.0.0 --port 10000
     healthCheckPath: /health
     envVars:
       - key: SETUP_PASSWORD
