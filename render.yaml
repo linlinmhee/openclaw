@@ -16,6 +16,8 @@ services:
         generateValue: true
       - key: NODE_OPTIONS
         value: "--max-old-space-size=420"
+      - key: OPENCLAW_GATEWAY_CONTROL_UI_DANGEROUSLY_ALLOW_HOST_HEADER_ORIGIN_FALLBACK
+        value: "true"
     disk:
       name: openclaw-data
       mountPath: /data
